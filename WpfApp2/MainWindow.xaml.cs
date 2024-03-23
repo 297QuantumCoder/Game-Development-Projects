@@ -50,5 +50,34 @@ namespace WpfApp2
                 animalEmoji.RemoveAt(index);
             }
         }
+
+        TextBlock lastClickedTextBlock;
+        bool findingMatch = false;
+        private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            TextBlock currentTextBlock = sender as TextBlock;
+
+            if(findingMatch ==  false)
+            {
+                lastClickedTextBlock = currentTextBlock;
+                findingMatch = true;
+                currentTextBlock.Visibility = Visibility.Hidden;
+            }
+
+            else if(lastClickedTextBlock.Text == currentTextBlock.Text)
+            {
+                findingMatch = false;
+                currentTextBlock.Visibility = Visibility.Hidden;
+            }
+
+            else
+            {
+                findingMatch = false;
+                lastClickedTextBlock.Visibility = Visibility.Visible;
+            }
+
+        }
+
+      
     }
 }
