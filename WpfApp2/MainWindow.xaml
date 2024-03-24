@@ -39,6 +39,8 @@
         <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" Width="40" Height="34" RenderTransformOrigin="0.563,4.383" FontSize="36" FontFamily="Berlin Sans FB Demi" Margin="0,24,0,0" Grid.Row="3" Grid.Column="1" MouseDown = "TextBlock_MouseDown"/>
         <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" Width="40" Height="34" RenderTransformOrigin="0.563,4.383" FontSize="36" FontFamily="Berlin Sans FB Demi" Margin="0,24,0,0" Grid.Row="3" Grid.Column="2" MouseDown = "TextBlock_MouseDown"/>
         <TextBlock HorizontalAlignment="Center" Text="?" VerticalAlignment="Top" Width="40" Height="34" RenderTransformOrigin="0.563,4.383" FontSize="36" FontFamily="Berlin Sans FB Demi" Margin="0,24,0,0" Grid.Row="3" Grid.Column="3" MouseDown = "TextBlock_MouseDown"/>
+        <TextBlock x:Name="timerTextBlock" Grid.Row="4" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" FontSize="30
+                   " FontWeight="Bold" FontFamily="Cascadia Code" Grid.ColumnSpan="4" Height="67" Width="400" MouseDown="timerTextBlock_MouseDown" RenderTransformOrigin="0.692,0.476" HorizontalAlignment="Center" Padding="20,15,0,0"/>
 
     </Grid>
 </Window>
